@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Manifiesto de Pasajeros - Formato A4</title>
+    <link href="manifiestocpe.css" rel="stylesheet" type="text/css">
+    <style>
+        table#table1 tbody { 
+            background: url(cello.png);
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+        #convertButton {
+            margin: 20px auto;
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #convertButton:hover {
+            background-color: #0056b3;
+        }
+        #sunatInfo {
+            text-align: right;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #authorization {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        #linea {
+            border-top: 2px solid black;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor"> 
+       
+        <table border="0" width="100%" align="center" id="table_p">
+            <tbody> 
+                <tr>
+                    <td>
+                        <div class="logo">
+                            <img src="bus.png" width="100%" alt="">
+                        </div> 
+                        <div id="fuente" class="titulo">
+                            <strong><center>EXPRESO SAN MARTIN NOBLEZA E.I.R.L.</center></strong><br>
+                            <center><div id="color_azul"><b>CAL.LA ESPARCETA NRO. 115 DPTO. 302 LIMA - LIMA - SANTIAGO DE SURCO</b></div></center>
+                            <center><div><b>AV. JACINTO IBAÑEZ NRO. S/N INT. C-49 OTR. TERMINAL TERRAPUERTO (COUNTER 49) AREQUIPA - AREQUIPA - JACOBO HUNTER</b></div></center>
+                        </div> 
+                        <div class="titulo2">
+                            <img src="logo.png" width="100%" alt=""> 
+                            <div id="marco">
+                                <div id="color_azul" style="font-size:18px;"><strong>RUC 20603007175</strong></div>
+                                <div id="color_azul"><strong>MANIFIESTO DE PASAJEROS</strong></div>
+                                <div id="fuente" style="font-size:25px;"><strong><center>0201-00002426</center></strong></div>
+                            </div>
+                            <strong id="fuente" style="margin-left:10px; color:red; font-size:21px;">N° 5575458023</strong>
+                        </div> 
+                        <div id="fin"></div> <br>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <div id="cabecera_datos"> 
+                            <div id="cabecera_datos2">
+                                <span id="item1"><strong>PLACA:</strong></span>
+                                <div id="item1_1">C8K-952</div>
+                                <span id="item2"><strong>MARCA:</strong></span>
+                                <div id="item2_2">SCANIA</div>
+                                <span id="item3"><strong>CIUDAD ORIGEN:</strong></span>
+                                <div id="item3_3">DESAGUADERO</div>
+                                <span id="item4"><strong>CIUDAD DESTINO:</strong></span>
+                                <div id="item4_4">LIMA</div>
+                            </div>
+                            <div id="cabecera_datos2">
+                                <span id="item5"><strong>N° DE CERTIFICADO DE HABILITACIÓN:</strong></span>
+                                <div id="item5_5">15P22000601E</div>
+                                <span id="item6"><strong>FECHA:</strong></span>
+                                <div id="item6_6">10/07/2024</div>
+                                <span id="item7"><strong>HORA:</strong></span>
+                                <div id="item7_7">07:00 P.M.</div>    
+                                
+                            </div>
+                            <div id="cabecera_datos2">
+                                <span id="item8"><strong>PILOTO:</strong></span>
+                                <div id="item8_8">OSCAR, CONDORI VELAZCO</div>                           
+                                <span id="item9"><strong>N° LIC.:</strong></span>
+                                <div id="item9_9">LICENCIA DE CONDUCIR</div>
+                            </div>
+                            <div id="cabecera_datos2">
+                                <span id="item10"><strong>COPILOTO:</strong></span>
+                                <div id="item10_10">WILLINGTON, CRUZ LUPACA</div>                           
+                                <span id="item11"><strong>N° LIC.:</strong></span>
+                                <div id="item11_11">U71048551</div>    
+                                
+                            </div>
+                            <div id="cabecera_datos2">
+                                <span id="item12"><strong>CANT. DE PASAJEROS:</strong></span>
+                                <div id="item12_12">44.00</div>
+                               
+                                <span id="item13"><strong>CANT. ASIENTOS:</strong></span>
+                                <div id="item13_13">64</div>    
+    
+                                <span id="item14"><strong>TRIPULANTE:</strong></span>
+                                <div id="item14_14">,</div>    
+                                
+                            </div>
+                         </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="table1" height="auto">
+
+            <thead> 
+                <tr>
+                    <th width="3%" id="thead"><b>It.</b></th>
+                    <th width="32%" id="thead"><b>Nombres y Apellidos de Pasajeros</b></th>    
+                    <th width="3%" id="thead"><b>Tipo</b></th>
+                    <th width="10%" id="thead"><b>N° Doc.</b></th>
+                    <th width="3%" id="thead"><b>Edad</b></th> 
+                    <th width="10%" id="thead"><b>Destino</b></th>
+                    <th width="15%" id="thead"><b>N° Boleto</b></th>
+                    <th width="10%" id="thead"><b>Nacionalidad</b></th>  
+                    <th width="4%" id="thead"><b>N° Asiento</b></th>  
+                    <th width="10%" id="thead"><b>Importe S/.</b></th>    
+                </tr>
+            </thead> 
+            <tbody valign="top">
+                <tr>
+                    <td id="td1" valign="top">
+                    
+                        <div id="td1_1">
+                                                                
+                            <div id="fin">
+                                <div class="detalle-data dt-1">1</div>
+                                <div class="detalle-data dt-2">MOISES RAMOS GARCIA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">08327185</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">64</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV40-00015341</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">4</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">2</div>
+                                <div class="detalle-data dt-2">TOMAS TOTORA APAZA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">01320495</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">49</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV40-00015345</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">6</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">3</div>
+                                <div class="detalle-data dt-2">JOSE VICENTE CAMPO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">24846803</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">32</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019697</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">8</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">4</div>
+                                <div class="detalle-data dt-2">SEBASTIAN PEREZ RIVERO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">085037584</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">32</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019713</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">37</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">75.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">5</div>
+                                <div class="detalle-data dt-2">JEFFERSON JOSE FERNANDEZ FERNANDEZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">20862798</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">33</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019739</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">41</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">6</div>
+                                <div class="detalle-data dt-2">YULIANA MARIA AÑEZ QUIJADA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">20725797</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">31</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019740</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">45</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">7</div>
+                                <div class="detalle-data dt-2">LIAN AUGUSTO FERNANDEZ AÑEZ (PADRE Y MADRE)</div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">9674099</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">1</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019740</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">45</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">0.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">8</div>
+                                <div class="detalle-data dt-2">MELISSA SOFIA  FERNANDEZ AÑEZ  (PADRE Y MADRE)</div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">7827430</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">4</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019740</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">45</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">0.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">9</div>
+                                <div class="detalle-data dt-2">JEILIN SOFIA  FERNANDEZ  AÑEZ  (PADRE Y MADRE)</div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">9674099</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">3</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019740</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">45</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">0.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">10</div>
+                                <div class="detalle-data dt-2">ROSMEL JERONIMO  MEDINA ANZOLA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">22697627</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">32</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019741</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">46</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">11</div>
+                                <div class="detalle-data dt-2">ALI RICARDO MARTINEZ MORALES </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">26183097</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">26</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019742</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">47</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">12</div>
+                                <div class="detalle-data dt-2">MANUEL  SORIANO DE LOS SANTOS </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">SE17158600</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">36</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019743</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">48</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">13</div>
+                                <div class="detalle-data dt-2">LEONELA YOGNAY TORREALBA  GUTIERREZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">19817002</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">37</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019744</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">24</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">14</div>
+                                <div class="detalle-data dt-2">YENIFER ANAIS ALAYON CASTILLO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">246353803</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">29</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019745</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">13</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">15</div>
+                                <div class="detalle-data dt-2">JEHILISMAR DALET ALAYON CASTILLO (MADRE)</div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">58589948</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">4</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019745</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">13</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">0.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">16</div>
+                                <div class="detalle-data dt-2">MANUEL ALEXANDER GUZMAN BLANCO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">31106731</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">19</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019746</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">21</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">17</div>
+                                <div class="detalle-data dt-2">BARBARA MICHEL CARREÑO CARREÑO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">29524988</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">20</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019747</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">22</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">18</div>
+                                <div class="detalle-data dt-2">ARELINA OBREGON MORALES </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">11650033</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">34</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019748</div>
+                                <div class="detalle-data dt-8">BOLIVIA</div>
+                                <div class="detalle-data dt-9">1</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">19</div>
+                                <div class="detalle-data dt-2">EINER ACOSTA RAMIREZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">17460391</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">39</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019749</div>
+                                <div class="detalle-data dt-8">BOLIVIA</div>
+                                <div class="detalle-data dt-9">2</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">20</div>
+                                <div class="detalle-data dt-2">CARLOS ENRIQUE BARAZARTE CHINQUILLA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">27619721</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">28</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019750</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">12</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">21</div>
+                                <div class="detalle-data dt-2">ABRAHAM DAVID LEAL VILLALOBOS </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">31897704</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">20</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019751</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">11</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">22</div>
+                                <div class="detalle-data dt-2">LUIS ENRIQUE  MARRUFO MORILLO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">024312132</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">35</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019752</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">9</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">23</div>
+                                <div class="detalle-data dt-2">ANA SOFIA  OROZCO LOAIZA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">BD116976</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">12</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019753</div>
+                                <div class="detalle-data dt-8">COLOMBIA</div>
+                                <div class="detalle-data dt-9">52</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">24</div>
+                                <div class="detalle-data dt-2">GERARDIN LOAIZA HENAO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">AV964661</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">32</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019754</div>
+                                <div class="detalle-data dt-8">COLOMBIA</div>
+                                <div class="detalle-data dt-9">53</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">25</div>
+                                <div class="detalle-data dt-2">ANTONELLA  ROMERO LOAIZA (PADRE Y MADRE)</div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">BD116973</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">4</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019754</div>
+                                <div class="detalle-data dt-8">COLOMBIA</div>
+                                <div class="detalle-data dt-9">26</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">0.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">26</div>
+                                <div class="detalle-data dt-2">JORGE HERNAN ROMERO GIRALDO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">PAST.</f></div>
+                                <div class="detalle-data dt-4">AZ986055</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">34</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019755</div>
+                                <div class="detalle-data dt-8">COLOMBIA</div>
+                                <div class="detalle-data dt-9">54</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">27</div>
+                                <div class="detalle-data dt-2">MILAGROS DEL CARMEN GONZALEZ ROMERO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">10834823</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">45</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV39-00019756</div>
+                                <div class="detalle-data dt-8">VENEZUELA</div>
+                                <div class="detalle-data dt-9">5</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                                                                
+                            <div id="fin">
+                                <div class="detalle-data dt-1">28</div>
+                                <div class="detalle-data dt-2">PERCY JUNIOR ANGULO SOTO </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">61098659</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">19</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV53-00013034</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">59</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">110.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">29</div>
+                                <div class="detalle-data dt-2">NOEMY ROSA TRUJILLO VILLANUEVA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">C.E.</f></div>
+                                <div class="detalle-data dt-4">11080182</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">18</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV53-00013035</div>
+                                <div class="detalle-data dt-8">BOLIVIA</div>
+                                <div class="detalle-data dt-9">58</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">110.00</f></div>
+                               
+                             </div>  
+                                                
+                                
+                            <div id="fin">
+                                <div class="detalle-data dt-1">30</div>
+                                <div class="detalle-data dt-2">GIAN MARCO SACACA MAMANI </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">71848623</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">27</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017792</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">51</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">120.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">31</div>
+                                <div class="detalle-data dt-2">GRICELDA PANTOJA CHAVEZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">48813681</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">27</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017796</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">49</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">120.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">32</div>
+                                <div class="detalle-data dt-2">CAMILA ELIZABETH ARROYO DE LA CRUZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">75713405</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">26</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017797</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">50</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">120.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">33</div>
+                                <div class="detalle-data dt-2">LEIDER ALEJANDRO HOYOS NARVAEZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">EXTR.</f></div>
+                                <div class="detalle-data dt-4">005588098</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">27</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017804</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">29</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">34</div>
+                                <div class="detalle-data dt-2">MIGUEL ANGEL LAURA CUTIPA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">45625376</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">35</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017805</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">7</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">70.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">35</div>
+                                <div class="detalle-data dt-2">CRISTIAN LOJA INGA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">77916578</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">21</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV54-00017806</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">25</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">70.00</f></div>
+                               
+                             </div>  
+                             
+                                
+                            <div id="fin">
+                                <div class="detalle-data dt-1">36</div>
+                                <div class="detalle-data dt-2">JORGE ENRIQUE SANCHEZ GUZMAN </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">42255559</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">45</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033468</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">55</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">37</div>
+                                <div class="detalle-data dt-2">CARLOS DANIEL AIRE PEREZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">09565462</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">25</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033469</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">56</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">80.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">38</div>
+                                <div class="detalle-data dt-2">NICOLE MARIANA FLORES HUAMAN </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">72752722</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">19</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033470</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">15</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">50.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">39</div>
+                                <div class="detalle-data dt-2">JACK JHOSEP DELGADILLO RADA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">76138936</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">23</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033471</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">16</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">50.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">40</div>
+                                <div class="detalle-data dt-2">LARRY BRANDON CASQUINA HUAMANI </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">72225989</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">27</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033472</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">28</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">50.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">41</div>
+                                <div class="detalle-data dt-2">MAGNO HASSAN FIGUEROA SALAS </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">42114740</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">30</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033473</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">10</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">50.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">42</div>
+                                <div class="detalle-data dt-2">CLODOALDO COSME RAMOS CHANI </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">24965991</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">30</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV56-00033474</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">32</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">50.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">43</div>
+                                <div class="detalle-data dt-2">SANDRA JUANA FLORES BALLON </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">29541077</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">55</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009796</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">3</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">70.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">44</div>
+                                <div class="detalle-data dt-2">BETSSY LUCELY LOPEZ BAYLON </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">72189641</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">31</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009813</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">19</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">70.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">45</div>
+                                <div class="detalle-data dt-2">DOMINIC GONZALES LOPEZ </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">79822246</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">8</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009814</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">20</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">70.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">46</div>
+                                <div class="detalle-data dt-2">DAVID AYCAYA TACORA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">74778730</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">25</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009815</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">17</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">60.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">47</div>
+                                <div class="detalle-data dt-2">MARIA FERNANDA CCAHUANA IMATA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">76150992</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">25</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009816</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">18</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">60.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">48</div>
+                                <div class="detalle-data dt-2">JULIO CESAR SEQUEIROS FIGUEROA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">41481501</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">38</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">BV57-00009817</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">27</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">60.00</f></div>
+                               
+                             </div>  
+                              
+                            <div id="fin">
+                                <div class="detalle-data dt-1">49</div>
+                                <div class="detalle-data dt-2">JULIO CESAR SEQUEIROS FIGUEROA </div>
+                                <div class="detalle-data dt-3"><f style="margin-left:-5px;">DNI</f></div>
+                                <div class="detalle-data dt-4">41481501</div>
+                                <div class="detalle-data dt-5"><f style="margin-left:-2px;">38</f></div>
+                                <div class="detalle-data dt-6">LIMA</div>
+                                <div class="detalle-data dt-7">FV57-00000714</div>
+                                <div class="detalle-data dt-8">PERU</div>
+                                <div class="detalle-data dt-9">23</div>
+                                <div class="detalle-data dt-10"><f style="margin-left:-41px; position: absolute;">60.00</f></div>
+                               
+                             </div>  
+                                   
+                    
+                        
+                        </div>
+                        
+                    </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1"> </td>
+                    <td id="op1_1"> </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="sunatInfo"><strong>SUNAT</strong></div>
+
+        <div style="clear:both;">
+            <div id="t">
+            <div id="linea1"></div>
+            </div>
+            <div id="t">
+            <div id="linea1"></div><br><br>
+            </div>
+            </div>
+        <div id="authorization">
+            NUMERO DE AUTORIZACIÓN DE IMPRESIÓN: N° 5575458023
+        </div>
+    </div>
+
+
+    <button id="convertButton">Descargar en pdf</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        document.getElementById('convertButton').addEventListener('click', function () {
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({
+                orientation: 'portrait',
+                unit: 'mm',
+                format: 'a4'
+            });
+    
+            const content = document.getElementById('contenedor');
+            html2canvas(content, { scale: 2 }).then((canvas) => {
+                const imgData = canvas.toDataURL('image/png');
+                const pageWidth = 210; 
+                const pageHeight = 297; 
+                const margin = 10; 
+                const imgWidth = pageWidth - 2 * margin;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                let position = 0; 
+                let currentHeight = 0;
+    
+                while (currentHeight < canvas.height) {
+                    const pageCanvas = document.createElement('canvas');
+                    pageCanvas.width = canvas.width;
+                    pageCanvas.height = Math.min(canvas.height - currentHeight, (pageHeight - 2 * margin) * (canvas.width / imgWidth));
+    
+                    const pageCtx = pageCanvas.getContext('2d');
+                    pageCtx.drawImage(canvas, 0, currentHeight, canvas.width, pageCanvas.height, 0, 0, canvas.width, pageCanvas.height);
+    
+                    const pageImgData = pageCanvas.toDataURL('image/png');
+                    pdf.addImage(pageImgData, 'PNG', margin, margin, imgWidth, (pageCanvas.height * imgWidth) / canvas.width);
+    
+                    currentHeight += pageCanvas.height;
+    
+                    if (currentHeight < canvas.height) {
+                        pdf.addPage(); 
+                    }
+                }
+                pdf.save('manifiesto.pdf');
+            }).catch(error => {
+                console.error("Error al generar el PDF:", error);
+            });
+        });
+    </script>
+</body>
+</html>
